@@ -1,6 +1,8 @@
 import React from 'react';
 import CounterNoCons from './counter/CounterNoCons';
 import House from './00_house-lights/House';
+import RedditAxios from './00_api-request/RedditAxios';
+import RedditFetch from './00_api-request/RedditFetch';
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       I am an APP component
       <CounterNoCons />
       <House />
+      <RedditAxios subreddit={"reactjs"} />
+      <RedditFetch subreddit={"reactjs"} />
     </div>
   );
 }
