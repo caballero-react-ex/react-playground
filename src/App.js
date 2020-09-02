@@ -7,11 +7,11 @@ import RedditFetch from './00_api-request/RedditFetch';
 function App() {
   return (
     <div style={{width: "600px", margin: "0 auto"}}>
-      I am an APP component
-      <CounterNoCons />
-      <House />
+     
+      {/* <CounterNoCons />
+      <House /> */}
       <RedditAxios subreddit={"reactjs"} />
-      <RedditFetch subreddit={"reactjs"} />
+      {/* <RedditFetch subreddit={"reactjs"} /> */}
     </div>
   );
 }
