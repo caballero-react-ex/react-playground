@@ -1,0 +1,29 @@
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 60px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid grey;
+}
+
+.item:last-of-type {
+  margin-bottom: 0px;
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+
+.btn {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.item-text {
+  width: 80px;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
