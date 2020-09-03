@@ -44,9 +44,9 @@ class Reddit extends Component {
           ) : (
             <>
               {posts.slice(0, 5).map(post => (
-                <ul key={post.id}>
+                <ul key={post.id} style={{listStyleType: "none", paddingLeft: "0"}}>
                   <li >{post.title}</li>
-                  <li >{post.permalink}</li>
+                  <li ><a href={`https://www.reddit.com/${post.permalink}`}>To Article &#8594;</a></li>
                 </ul>
               ))}
             </>
