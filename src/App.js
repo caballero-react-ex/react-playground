@@ -10,6 +10,7 @@ import LightSwitch from './00_use-state/LightSwitch';
 import RandomList from './00_use-state/RandomList';
 import AudioApp from './00_use-state/AudioApp';
 import AudioAppWithObject from './00_use-state/AudioAppWithObject';
+import Quote from './00_api-request/QuoteAPI';
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
       {/* /// API Calls /// */}
       {/* <RedditAxios subreddit={"reactjs"} /> */}
       {/* <RedditFetch subreddit={"reactjs"} /> */}
+
+      {/* <Quote author={"Bruce%20Lee"} /> */}
+      {/* <Quote theme={"death"} />
+      <Quote theme={"best"} /> */}
 
       {/* /// HOOKS /// */}
       {/* <OneTimeBtnClass onClick={() => alert("hi")}/> */}
