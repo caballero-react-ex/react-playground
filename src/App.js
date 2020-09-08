@@ -11,6 +11,9 @@ import RandomList from './00_use-state/RandomList';
 import AudioApp from './00_use-state/AudioApp';
 import AudioAppWithObject from './00_use-state/AudioAppWithObject';
 import Quote from './00_api-request/QuoteAPI';
+import InputList from './00_controls/ControlledControl';
+import NameInputs from './00_controls/NameInput';
+
 
 function App() {
   return (
@@ -37,7 +40,11 @@ function App() {
       {/* <LightSwitch /> */}
       {/* <RandomList /> */}
       {/* <AudioApp /> */}
-      <AudioAppWithObject />
+      {/* <AudioAppWithObject /> */}
+
+       {/* /// INPUTS /// */}
+       {/* <InputList /> */}
+       <NameInputs />
     </div>
   );
 }
