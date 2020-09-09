@@ -14,6 +14,8 @@ import Quote from './00_api-request/QuoteAPI';
 import InputList from './00_controls/ControlledControl';
 import NameInputs from './00_controls/NameInput';
 import NameInputsClass from './00_controls/NameInputClass';
+import NameInputsUncontrolledClass from './00_controls/UncontrolledInputClass';
+import NameInputsUncontrolled from './00_controls/UncontrolledInput';
 
 
 function App() {
@@ -46,7 +48,10 @@ function App() {
        {/* /// INPUTS /// */}
        {/* <InputList /> */}
        <NameInputs />
+       <NameInputsUncontrolled />
        <NameInputsClass />
+       <NameInputsUncontrolledClass />
+       
 
     </div>
   );
