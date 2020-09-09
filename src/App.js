@@ -13,6 +13,7 @@ import AudioAppWithObject from './00_use-state/AudioAppWithObject';
 import Quote from './00_api-request/QuoteAPI';
 import InputList from './00_controls/ControlledControl';
 import NameInputs from './00_controls/NameInput';
+import NameInputsClass from './00_controls/NameInputClass';
 
 
 function App() {
@@ -45,6 +46,8 @@ function App() {
        {/* /// INPUTS /// */}
        {/* <InputList /> */}
        <NameInputs />
+       <NameInputsClass />
+
     </div>
   );
 }
