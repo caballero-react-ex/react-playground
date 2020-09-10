@@ -16,6 +16,7 @@ import NameInputs from './00_controls/NameInput';
 import NameInputsClass from './00_controls/NameInputClass';
 import NameInputsUncontrolledClass from './00_controls/UncontrolledInputClass';
 import NameInputsUncontrolled from './00_controls/UncontrolledInput';
+import PizzaAppClass from './00_controls/PizzaApp';
 
 
 function App() {
@@ -47,11 +48,13 @@ function App() {
 
        {/* /// INPUTS /// */}
        {/* <InputList /> */}
-       <NameInputs />
+
+       {/* <NameInputs />
        <NameInputsUncontrolled />
        <NameInputsClass />
-       <NameInputsUncontrolledClass />
+       <NameInputsUncontrolledClass /> */}
        
+       <PizzaAppClass />
 
     </div>
   );
