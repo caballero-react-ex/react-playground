@@ -20,6 +20,8 @@ import PizzaAppClass from './00_controls/PizzaApp';
 import Counter from './00_use-reducer/UseReducerTest';
 import ShoppingList from './00_use-reducer/ShoppingList';
 import LightReducer from './00_use-reducer/LightReducer';
+import Case from './00_use-reducer/Case';
+import Keypad from './00_use-reducer/CaseSolution';
 
 
 function App() {
@@ -60,9 +62,11 @@ function App() {
        {/* <PizzaAppClass /> */}
 
        {/* USE-REDUCER */}
-       <Counter />
-       <ShoppingList />
-       <LightReducer />
+       {/* <Counter /> */}
+       {/* <ShoppingList /> */}
+       {/* <LightReducer /> */}
+       <Case combo={"1111"}/>
+       <Keypad combo={"6342"} />
 
     </div>
   );
