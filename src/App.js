@@ -17,6 +17,9 @@ import NameInputsClass from './00_controls/NameInputClass';
 import NameInputsUncontrolledClass from './00_controls/UncontrolledInputClass';
 import NameInputsUncontrolled from './00_controls/UncontrolledInput';
 import PizzaAppClass from './00_controls/PizzaApp';
+import Counter from './00_use-reducer/UseReducerTest';
+import ShoppingList from './00_use-reducer/ShoppingList';
+import LightReducer from './00_use-reducer/LightReducer';
 
 
 function App() {
@@ -54,7 +57,12 @@ function App() {
        <NameInputsClass />
        <NameInputsUncontrolledClass /> */}
        
-       <PizzaAppClass />
+       {/* <PizzaAppClass /> */}
+
+       {/* USE-REDUCER */}
+       <Counter />
+       <ShoppingList />
+       <LightReducer />
 
     </div>
   );
