@@ -6,11 +6,11 @@ import './LightReducer.css';
 const reducer = (state, action) => {
   switch (action.type) {
     case "levelUp": 
-      if(state === 3) return 3;
+      if(state === 3) return state;
       return state + 1
 
     case "levelDown": 
-      if(state === 0) return 0;
+      if(state === 0) return state;
       return state - 1
 
     case "off": return 0

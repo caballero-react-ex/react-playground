@@ -57,7 +57,7 @@ function Keypad({ combo }) {
         </button>
       ))}
       <p>The lock is {lock.status}</p>
-      <p>
+      <p style={{borderBottom: "1px solid grey", paddingBottom: "20px"}}>
         You've gotten {lock.nextKeyIndex} keys correct.
       </p>
     </>
