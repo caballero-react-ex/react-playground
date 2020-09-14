@@ -1,27 +1,8 @@
 import React from 'react';
-import CounterNoCons from './counter/CounterNoCons';
-import House from './00_house-lights/House';
-import RedditAxios from './00_api-request/RedditAxios';
-import RedditFetch from './00_api-request/RedditFetch';
-import OneTimeBtnClass from './00_use-state/OneTimeBtnClass';
-import OneTimeBtnHook from './00_use-state/OneTimeBtnHook';
-import MultiCounter from './00_use-state/Increment';
-import LightSwitch from './00_use-state/LightSwitch';
-import RandomList from './00_use-state/RandomList';
-import AudioApp from './00_use-state/AudioApp';
-import AudioAppWithObject from './00_use-state/AudioAppWithObject';
-import Quote from './00_api-request/QuoteAPI';
-import InputList from './00_controls/ControlledControl';
-import NameInputs from './00_controls/NameInput';
-import NameInputsClass from './00_controls/NameInputClass';
-import NameInputsUncontrolledClass from './00_controls/UncontrolledInputClass';
-import NameInputsUncontrolled from './00_controls/UncontrolledInput';
-import PizzaAppClass from './00_controls/PizzaApp';
-import Counter from './00_use-reducer/UseReducerTest';
-import ShoppingList from './00_use-reducer/ShoppingList';
-import LightReducer from './00_use-reducer/LightReducer';
 import Case from './00_use-reducer/Case';
 import Keypad from './00_use-reducer/CaseSolution';
+import UseEffectTest from './00_use-effect/UseEffectTest';
+import LightReducer from './00_use-reducer/LightReducer';
 
 
 function App() {
@@ -66,7 +47,10 @@ function App() {
        {/* <ShoppingList /> */}
        {/* <LightReducer /> */}
        <Case combo={"1111"}/>
-       <Keypad combo={"6342"} />
+       {/* <Keypad combo={"6342"} /> */}
+
+       {/* USE-EFFECT */}
+       {/* <UseEffectTest /> */}
 
     </div>
   );
