@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Case from './00_use-reducer/Case';
 import Keypad from './00_use-reducer/CaseSolution';
 import UseEffectTest from './00_use-effect/UseEffectTest';
 import LightReducer from './00_use-reducer/LightReducer';
+import DocumentName from './00_use-effect/DocumentName'
+import RedditParent from './00_use-effect/RedditFecthParent';
 
 
 function App() {
+
   return (
     <div style={{width: "600px", margin: "0 auto"}}>
      
@@ -46,11 +49,13 @@ function App() {
        {/* <Counter /> */}
        {/* <ShoppingList /> */}
        {/* <LightReducer /> */}
-       <Case combo={"1111"}/>
+       {/* <Case combo={"1111"}/> */}
        {/* <Keypad combo={"6342"} /> */}
 
        {/* USE-EFFECT */}
        {/* <UseEffectTest /> */}
+       <DocumentName / > 
+       {/* <RedditParent /> */}
 
     </div>
   );
