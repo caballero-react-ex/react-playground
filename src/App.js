@@ -5,6 +5,7 @@ import UseEffectTest from './00_use-effect/UseEffectTest';
 import LightReducer from './00_use-reducer/LightReducer';
 import DocumentName from './00_use-effect/DocumentName'
 import RedditParent from './00_use-effect/RedditFecthParent';
+import RandomMessage from './00_use-effect/RandomMessage';
 
 
 function App() {
@@ -54,8 +55,10 @@ function App() {
 
        {/* USE-EFFECT */}
        {/* <UseEffectTest /> */}
-       <DocumentName / > 
-       {/* <RedditParent /> */}
+       {/* <DocumentName / >  */}
+       <RedditParent />
+
+       {/* <RandomMessage /> */}
 
     </div>
   );
