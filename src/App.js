@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
-import Case from './00_use-reducer/Case';
-import Keypad from './00_use-reducer/CaseSolution';
-import UseEffectTest from './00_use-effect/UseEffectTest';
-import LightReducer from './00_use-reducer/LightReducer';
-import DocumentName from './00_use-effect/DocumentName'
-import RedditParent from './00_use-effect/RedditFecthParent';
-import RandomMessage from './00_use-effect/RandomMessage';
-
+// import Case from './00_use-reducer/Case';
+// import Keypad from './00_use-reducer/CaseSolution';
+// import UseEffectTest from './00_use-effect/UseEffectTest';
+// import LightReducer from './00_use-reducer/LightReducer';
+// import DocumentName from './00_use-effect/DocumentName'
+// import RedditParent from './00_use-effect/RedditFecthParent';
+// import RandomMessage from './00_use-effect/RandomMessage';
+import FetchApp from './00_api-request/00_fetch-hook/FetchHook';
+import RoomStore from './01_context-api/RoomContext';
+import Room from './01_context-api/Room';
 
 function App() {
 
   return (
-    <div style={{width: "600px", margin: "0 auto"}}>
-     
+    <>
       {/* /// COUNTER ///  */}
       {/* <CounterNoCons />*/}
 
@@ -36,31 +37,38 @@ function App() {
       {/* <AudioApp /> */}
       {/* <AudioAppWithObject /> */}
 
-       {/* /// INPUTS /// */}
-       {/* <InputList /> */}
+      {/* /// INPUTS /// */}
+      {/* <InputList /> */}
 
-       {/* <NameInputs />
-       <NameInputsUncontrolled />
-       <NameInputsClass />
-       <NameInputsUncontrolledClass /> */}
+      {/* <NameInputs />
+      <NameInputsUncontrolled />
+      <NameInputsClass />
+      <NameInputsUncontrolledClass /> */}
+      
+      {/* <PizzaAppClass /> */}
+
+      {/* USE-REDUCER */}
+      {/* <Counter /> */}
+      {/* <ShoppingList /> */}
+      {/* <LightReducer /> */}
+      {/* <Case combo={"1111"}/> */}
+      {/* <Keypad combo={"6342"} /> */}
+
+      {/* USE-EFFECT */}
+      {/* <UseEffectTest /> */}
+      {/* <DocumentName / >  */}
+      {/* <RedditParent /> */}
+
+      {/* <RandomMessage /> */}
+      {/* <FetchApp /> */}
+
+      {/* CONTEXT API */}
+      
+      <Room />
+    </>
        
-       {/* <PizzaAppClass /> */}
 
-       {/* USE-REDUCER */}
-       {/* <Counter /> */}
-       {/* <ShoppingList /> */}
-       {/* <LightReducer /> */}
-       {/* <Case combo={"1111"}/> */}
-       {/* <Keypad combo={"6342"} /> */}
-
-       {/* USE-EFFECT */}
-       {/* <UseEffectTest /> */}
-       {/* <DocumentName / >  */}
-       <RedditParent />
-
-       {/* <RandomMessage /> */}
-
-    </div>
+   
   );
 }
 
