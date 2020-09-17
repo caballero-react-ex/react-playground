@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import CartApp from './02_cart-project/CartApp';
 // import Case from './00_use-reducer/Case';
 // import Keypad from './00_use-reducer/CaseSolution';
 // import UseEffectTest from './00_use-effect/UseEffectTest';
@@ -6,14 +7,19 @@ import React, { useState } from 'react';
 // import DocumentName from './00_use-effect/DocumentName'
 // import RedditParent from './00_use-effect/RedditFecthParent';
 // import RandomMessage from './00_use-effect/RandomMessage';
-import FetchApp from './00_api-request/00_fetch-hook/FetchHook';
-import RoomStore from './01_context-api/RoomContext';
-import Room from './01_context-api/Room';
+// import FetchApp from './00_api-request/00_fetch-hook/FetchHook';
+// import RoomStore from './01_context-api/RoomContext';
+// import Room from './01_context-api/Room';
+
+
 
 function App() {
 
   return (
     <>
+      {/* /// CART PROJECT ///  */}
+      <CartApp />
+      
       {/* /// COUNTER ///  */}
       {/* <CounterNoCons />*/}
 
@@ -63,12 +69,8 @@ function App() {
       {/* <FetchApp /> */}
 
       {/* CONTEXT API */}
-      
-      <Room />
+      {/* <Room /> */}
     </>
-       
-
-   
   );
 }
 

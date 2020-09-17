@@ -1,0 +1,43 @@
+/* .CartPage-item-list {
+  margin: 0; 
+  padding: 0;
+}
+
+.CartPage-item {
+  list-style: none;
+  margin-bottom: 20px;
+} */
+
+.add-remove-container {
+  text-align: right;
+}
+
+.CartItem-btn {
+  font-size: 18px;
+}
+
+.CartItem-count {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+}
+
+.total-price {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  border-top: 1px solid grey;
+}
+
+.total-items {
+  font-weight: normal;
+}
+
+.empty-cart {
+  font-size: 20px; 
+  color: grey;
+  text-align: center; 
+  margin-top: 50px;
+}
+ 
