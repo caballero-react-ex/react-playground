@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './Item.css';
 
 function Item({ item, children }) {
+
   return(
     <div className="Item">
       <div className="left">

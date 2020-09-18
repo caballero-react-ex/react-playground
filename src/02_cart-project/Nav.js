@@ -1,7 +1,11 @@
 import React from 'react';
+import { useCartContext }  from './context/CartContext';
 import './Nav.css';
 
-function Nav({activeTab, onTabChange, totalItems }) {
+function Nav({activeTab, onTabChange }) {
+
+  const cartContext = useCartContext();
+  const { cart } = cartContext; 
 
   const itemClass = tabName =>
     `Nav-item ${
@@ -25,9 +29,9 @@ function Nav({activeTab, onTabChange, totalItems }) {
             <span className="material-icons">
               shopping_cart
             </span>
-            {(totalItems.length > 0) &&
+            {(cart.length > 0) &&
               <div className="cart-total">
-                {totalItems.length}
+                {cart.length}
               </div>
             }
           </div>
