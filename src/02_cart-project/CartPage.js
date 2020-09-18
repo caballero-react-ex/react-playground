@@ -1,14 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useCartContext } from './context/CartContext';
 import './CartPage.css';
 import './ItemPage.css'
 import Item from './Item'; 
 
-function CartPage({ items, onAddOne, onRemoveOne, onSumPrice, totalItems }) {
+function CartPage() {
+
+  const cartContext = useCartContext();
+  const { cart, addToCart, removeItem, sumPrice, sumSameItems } = cartContext;
+
   return(
     <>
     <ul className="item-list"> 
-      {items.map(item =>
+      {sumSameItems(cart).map(item =>
         <li key={item.id} className="item"> 
           <Item 
             item={item} 
@@ -16,14 +20,14 @@ function CartPage({ items, onAddOne, onRemoveOne, onSumPrice, totalItems }) {
             <div className="add-remove-container">
               <button 
               className="CartItem-btn"
-              onClick={() => onRemoveOne(item)}
+              onClick={() => removeItem(item)}
               >
                 &ndash;
               </button> 
               <span className="CartItem-count">{item.count}</span> 
               <button
                 className="CartItembtn"
-                onClick={() => onAddOne(item)}
+                onClick={() => addToCart(item)}
               >
                 +
               </button>
@@ -33,10 +37,10 @@ function CartPage({ items, onAddOne, onRemoveOne, onSumPrice, totalItems }) {
       )}
     </ul>
     
-      {(onSumPrice > 0) 
+      {(cart.length > 0) 
         ? 
           <p className="total-price">
-            Total <span className="total-items">({totalItems.length} items)</span>: {onSumPrice}€
+            Total <span className="total-items">({cart.length} items)</span>: {sumPrice()}€
           </p>
         :
           <div className="empty-cart">
@@ -44,15 +48,9 @@ function CartPage({ items, onAddOne, onRemoveOne, onSumPrice, totalItems }) {
             <p >Click in "Items" to get some nice products.</p>
           </div>
       }
-   
     </>
   )
 };
 
-CartPage.propTypes = {
-  items: PropTypes.array.isRequired,
-  onAddOne: PropTypes.func.isRequired,
-  onRemoveItem: PropTypes.func.isRequired
-};
 
 export default CartPage;

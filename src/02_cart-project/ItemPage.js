@@ -1,21 +1,23 @@
 import React from 'react';
-import PropTypes from 'prop-types'; 
+import { useCartContext }  from './context/CartContext'; 
 import './ItemPage.css';
 import Item from './Item';
+import {items} from './static-data';
 
+function ItemPage() {
+  const cartContext = useCartContext();
+  const { addToCart } = cartContext;
 
-function ItemPage({items, onAddToCart}) {
   return (
     <ul className="item-list">
       {items.map(item => 
         <li key={item.id} className="item">
           <Item 
             item={item}
-            //onAddToCart={() => onAddToCart(item)}
           >  
             <button
               className="Item-addToCart"
-              onClick={() => onAddToCart(item)} 
+              onClick={() => addToCart(item)} 
             >
               Add to Cart
             </button>
@@ -26,9 +28,5 @@ function ItemPage({items, onAddToCart}) {
   )
 };
 
-ItemPage.propTypes = {
-  items: PropTypes.array.isRequired,
-  onAddToCart: PropTypes.func.isRequired,
-};
 
 export default ItemPage;
