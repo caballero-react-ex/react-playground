@@ -1,0 +1,18 @@
+.Navigation {
+  background-color: chocolate;
+  color: yellow;
+}
+
+
+
+/* @value primary: #BF4040;
+@value secondary: #1F4F7F; */
+
+.NavigationComp {
+  composes: Navigation;
+  border: 2px solid pink;
+}
+
+.text-secondary {
+  color: secondary;
+} 

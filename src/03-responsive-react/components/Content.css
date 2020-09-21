@@ -1,0 +1,28 @@
+:root {
+  --BG-color: red;
+}
+
+.content {
+ background-color: var(--BG-color);
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --BG-color: rgb(0, 255, 200);
+  }
+}
+
+.content-mobile {
+  padding: 50px;
+  background-color: blue;
+}
+
+.content-tablet {
+  background-color: greenyellow;
+  padding: 50px;
+}
+
+.content-desktop {
+  padding: 50px;
+  background-color: yellow;
+}
