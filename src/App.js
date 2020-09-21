@@ -1,76 +1,33 @@
 import React from 'react';
 import CartApp from './02_cart-project/CartApp';
-// import Case from './00_use-reducer/Case';
-// import Keypad from './00_use-reducer/CaseSolution';
-// import UseEffectTest from './00_use-effect/UseEffectTest';
-// import LightReducer from './00_use-reducer/LightReducer';
-// import DocumentName from './00_use-effect/DocumentName'
-// import RedditParent from './00_use-effect/RedditFecthParent';
-// import RandomMessage from './00_use-effect/RandomMessage';
-// import FetchApp from './00_api-request/00_fetch-hook/FetchHook';
-// import RoomStore from './01_context-api/RoomContext';
-// import Room from './01_context-api/Room';
+import WindowDimensionsProvider from './03-responsive-react/components/hooks/WindowDimensionsProvider';
+import {BreakpointProvider} from './03-responsive-react/components/hooks/MatchMediaHook';
+// import Content from './03-responsive-react/components/Content';
+import ContentMatchMedia from './03-responsive-react/components/ContentMatchMedia';
+import ContentWithCSSModules from './04_css-modules-breakpoints/ContentWithCSSModules';
 
-
+const queries = {
+  mobile: '(max-width: 520px)',
+  tablet: '(min-width: 521px) and (max-width: 1023px)',
+  desktop: '(min-width: 1024px)',
+  bigDesktop: '(min-width: 1025px)',
+  //or: '(orientation: portrait)', // we can check orientation also
+}
 
 function App() {
 
   return (
     <>
-      {/* /// CART PROJECT ///  */}
-      <CartApp />
+      <BreakpointProvider queries={queries}>
+    
+      {/* /// RESPONSIVE REACT ///  */}
+        <ContentMatchMedia />
+      </BreakpointProvider>
+
+      <ContentWithCSSModules />
       
-      {/* /// COUNTER ///  */}
-      {/* <CounterNoCons />*/}
-
-      {/* /// House Lights /// */}
-      {/* <House /> */}
-
-      {/* /// API Calls /// */}
-      {/* <RedditAxios subreddit={"reactjs"} /> */}
-      {/* <RedditFetch subreddit={"reactjs"} /> */}
-
-      {/* <Quote author={"Bruce%20Lee"} /> */}
-      {/* <Quote theme={"death"} />
-      <Quote theme={"best"} /> */}
-
-      {/* /// HOOKS /// */}
-      {/* <OneTimeBtnClass onClick={() => alert("hi")}/> */}
-      {/* <OneTimeBtnHook onClick={() => alert("hi")} />  */}
-      {/* <MultiCounter /> */}
-      {/* <LightSwitch /> */}
-      {/* <RandomList /> */}
-      {/* <AudioApp /> */}
-      {/* <AudioAppWithObject /> */}
-
-      {/* /// INPUTS /// */}
-      {/* <InputList /> */}
-
-      {/* <NameInputs />
-      <NameInputsUncontrolled />
-      <NameInputsClass />
-      <NameInputsUncontrolledClass /> */}
-      
-      {/* <PizzaAppClass /> */}
-
-      {/* USE-REDUCER */}
-      {/* <Counter /> */}
-      {/* <ShoppingList /> */}
-      {/* <LightReducer /> */}
-      {/* <Case combo={"1111"}/> */}
-      {/* <Keypad combo={"6342"} /> */}
-
-      {/* USE-EFFECT */}
-      {/* <UseEffectTest /> */}
-      {/* <DocumentName / >  */}
-      {/* <RedditParent /> */}
-
-      {/* <RandomMessage /> */}
-      {/* <FetchApp /> */}
-
-      {/* CONTEXT API */}
-      {/* <Room /> */}
     </>
+    
   );
 }
 
